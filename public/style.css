@@ -94,7 +94,6 @@ video {
 .main__chat__window {
   flex-grow: 1;
   overflow: auto;
-  color:rgb(216, 167, 253); 
   padding: 20px 20px 0 20px;
   background-color: #092e5f;
 }
@@ -110,13 +109,13 @@ video {
   flex-grow: 1;
   background-color: transparent;
   border: none;
-  color:rgb(216, 167, 253); 
+  color:#7db3f8; 
   user-select: none;
   outline: none;
 }
 
 #all_messages li {
-  color:rgb(216, 167, 253); 
+  color:#7db3f8; 
   list-style: none;
   border-bottom: 1px solid #3d3d42;
   padding: 10px 0;
