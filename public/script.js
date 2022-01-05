@@ -6,11 +6,7 @@ const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
 myVideo.muted = true;
 
-var peer = new Peer(undefined, {
-  path: "/peerjs",
-  host: "/",
-  port: ("3000"||process.env.PORT),
-});
+var peer = new Peer();
 
 let myVideoStream;
 
@@ -42,7 +38,7 @@ navigator.mediaDevices
     });
 
     document.addEventListener("keydown", (e) => {
-      if (e.which === 13 || chatInputBox.value != "") {
+      if (e.which === 13 && chatInputBox.value != "") {
         socket.emit("message", chatInputBox.value);
         chatInputBox.value = "";
       }
