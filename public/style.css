@@ -60,6 +60,7 @@ video {
   justify-content: space-between;
 }
 .main__controls_block {
+  padding-left: 23rem;
   display: flex;
 }
 .main__controls_button {
@@ -94,31 +95,35 @@ video {
 .main__chat__window {
   flex-grow: 1;
   overflow: auto;
-  padding: 20px 20px 0 20px;
+  padding: 20px 2px 0 2px;
   background-color: #092e5f;
 }
 .main__message_container {
   background-color: #161d29;
   border: 1px solid #092e5f;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 14px 11px;
   display: flex;
-  margin: 5px;
+  margin: 4px 3px;
 }
 .main__message_container input {
   flex-grow: 1;
   background-color: transparent;
   border: none;
-  color:#9ec6fa; 
+  color:#faf09ad3;
   user-select: none;
   outline: none;
 }
 
 #all_messages li {
-  color:#9ec6fa; 
+  color:#faf09ad3; 
+  background-color: rgba(117, 144, 175, 0.493);
   list-style: none;
   border-bottom: 1px solid #3d3d42;
-  padding: 10px 0;
+  padding: 10px 5px;
+  margin-bottom: 2px;
+  border: 1px solid #092e5f;
+  border-radius: 4px;
 }
 .unmute {
   color: red;
