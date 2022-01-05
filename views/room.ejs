@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>video chatting website</title>
+    <link rel="stylesheet" href="bootstrap.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,45 +17,51 @@
     </script>
   </head>
   <body>
-    <div class="main">
-      <div class="main__left">
-        <div class="main__videos">
-          <div id="video-grid"></div>
-        </div>
-        <div class="main__controls">
-          <div class="main__controls_block">
-            <div
-              class="main__controls_button"
-              id="muteButton"
-              onclick="muteUnmute()"
-            >
-              <i class="fa fa-microphone"></i>
-              <span>Mute</span>
+    <div class="con container">
+      <div class="ro row">
+        <div class="co col-lg-8 col-sm-12">
+          <div class="main__left">
+            <div class="main__videos">
+              <div id="video-grid"></div>
             </div>
-            <div
-              class="main__controls_button"
-              id="playPauseVideo"
-              onclick="playStop()"
-            >
-              <i class="fa fa-video-camera"></i>
-              <span>Pause Video</span>
+            <div class="main__controls">
+              <div class="main__controls_block">
+                <div
+                  class="main__controls_button"
+                  id="muteButton"
+                  onclick="muteUnmute()"
+                >
+                  <i class="fa fa-microphone"></i>
+                  <span>Mute</span>
+                </div>
+                <div
+                  class="main__controls_button"
+                  id="playPauseVideo"
+                  onclick="playStop()"
+                >
+                  <i class="fa fa-video-camera"></i>
+                  <span>Pause Video</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="main__right">
-        <div class="main__header">
-          <h3>Messages</h3>
-        </div>
-        <div class="main__chat__window" id="main__chat__window">
-          <ul class="messages" id="all_messages"></ul>
-        </div>
-        <div class="main__message_container">
-          <input
-            type="text"
-            id="chat_message"
-            placeholder="Type message here.."
-          />
+        <div class="co col-lg-4 col-sm-12">
+          <div class="main__right">
+            <div class="main__header">
+              <h3>Messages</h3>
+            </div>
+            <div class="main__chat__window" id="main__chat__window">
+              <ul class="messages" id="all_messages"></ul>
+            </div>
+            <div class="main__message_container">
+              <input
+                type="text"
+                id="chat_message"
+                placeholder="Type message here.."
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
