@@ -66,6 +66,10 @@ peer.on("open", (id) => {
 
 const connectToNewUser = (userId, streams) => {
   var call = peer.call(userId, streams);
+  var video = document.createElement("video");
+  call.on("stream", (userVideoStream) => {
+    addVideoStream(video, userVideoStream);
+  });
 };
 
 const addVideoStream = (videoEl, stream) => {
